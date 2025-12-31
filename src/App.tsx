@@ -9,6 +9,9 @@ import PackageDetails from "./pages/PackageDetails";
 import Dashboard from "./pages/Dashboard";
 import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
+import VisaProcess from "./pages/VisaProcess";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/packages/:id" element={<PackageDetails />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/visa" element={<VisaProcess />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
